@@ -1,0 +1,45 @@
+.main-profile{
+  position:absolute;
+  display: flex;
+  padding-top:55px;
+  height:400px;
+}
+.profile-container{
+  display:flex;
+  flex:2;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic-container{
+  width:50%;
+}
+.profile-pic{
+  width:100%;
+  display:block;
+  border-radius: 20px;
+}
+
+.biography-container{
+  display:flex;
+  flex:3;
+  align-items: center;
+  justify-content: center;
+}
+.biography-paragraph{
+  font-family: Roboto, Arial;
+  color:whitesmoke;
+  width: 70%;
+  line-height: 24px;
+  font-size:15px;
+}
+.biography-word{
+  font-family: Roboto, Arial;
+  font-size: 28px;
+  text-decoration: underline;
+}
+.ece-link{
+  color:whitesmoke;
+  text-decoration:none;
+  cursor: pointer;
+}

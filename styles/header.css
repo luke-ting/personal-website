@@ -1,0 +1,60 @@
+.header {
+  height: 55px;
+  display:flex;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+  background-color: rgb(52, 64, 76);
+}
+.left-section{
+  display: flex;
+  flex:1;
+  padding-left: 30px;
+  align-items:center;
+}
+
+.refresh-button{
+  font-family: Caveat, Roboto, Arial;
+  border-width:0;
+  background-color: rgb(52, 64, 76);
+  color:whitesmoke;
+  font-size: 30px;
+  font-weight:500;
+  cursor:pointer;
+  white-space: nowrap;
+}
+.refresh-button:hover{
+  font-weight:bold;
+}
+
+.right-section{
+  display:flex;
+  width:350px;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink:0;
+}
+.about-container,
+.projects-container,
+.posts-container,
+.contact-container{
+  display: flex;
+  justify-content: center;
+  flex:1;
+}
+
+.right-section button{
+  font-family: Roboto, Arial;
+  border-width:0;
+  font-size: 16px;
+  color:whitesmoke;
+  cursor:pointer;
+  background-color: rgb(52, 64, 76);
+}
+
+.right-section button:hover{
+  font-weight:500;
+  text-decoration:underline;
+}
