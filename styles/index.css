@@ -1,7 +1,7 @@
 .main-profile{
   position:absolute;
   display: flex;
-  padding-top:55px;
+  padding-top:12%;
   height:400px;
 }
 .profile-container{
@@ -40,6 +40,4 @@
 }
 .ece-link{
   color:whitesmoke;
-  text-decoration:none;
-  cursor: pointer;
 }

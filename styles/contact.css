@@ -1,0 +1,18 @@
+.contact-container{
+  display:flex;
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.contact-paragraph{
+  color:whitesmoke;
+  line-height: 30px;
+  font-size: 16px;
+}
+.contact-link{
+  color: aquamarine;
+}
