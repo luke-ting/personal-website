@@ -10,21 +10,22 @@ body{
   font-family: Arial, sans-serif;
   background-color: hsl(0,0%,30%);
   border-radius: 15px;
-  max-width:500px;
-  overflow: hidden;
 }
 #display{
-  width:100%;
-  padding: 20px;
+  border-radius: 15px 15px 0 0;
+  width:80%;
+  padding: 8% 10%;
   font-size: 2rem;
   text-align:left;
   border:none;
   color:white;
   background-color: hsl(0,0%,20%);
+  white-space: nowrap;
+  overflow-x: auto;
 }
 #keys{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 15px;
   padding: 25px;
 
@@ -32,7 +33,7 @@ body{
 button{
   width:100%;
   aspect-ratio: 1;
-  border-radius:20px;
+  border-radius:10px;
   border:none;
   background-color: hsl(0,0%,10%);
   color:whitesmoke;
@@ -47,24 +48,27 @@ button:active{
   background-color: hsl(0,0%,20%);
 }
 
-.number-btn{
+.cream-btn{
   background-color: hsl(40, 100%, 95%);
   color:black;
 }
-.number-btn:hover{
+.cream-btn:hover{
   background-color: hsl(40, 100%, 90%);
 }
-.number-btn:active{
+.cream-btn:active{
   background-color: hsl(40, 100%, 85%);
 }
 
-.operator-btn{
-  background-color: hsl(0, 0%, 96%);
+.orange-btn{
+  background-color: hsl(35, 100%, 55%);
   color:black;
 }
-.operator-btn:hover{
-  background-color: hsl(0, 0%, 90%);
+.orange-btn:hover{
+  background-color: hsl(35, 100%, 60%);
 }
-.operator-btn:active{
-  background-color: hsl(0, 0%, 85%);
+.orange-btn:active{
+  background-color: hsl(35, 100%, 65%);
+}
+#secondBtn{
+  background-color: blue;
 }

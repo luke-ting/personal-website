@@ -5,38 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scientific Calculator</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="icon" type = "image/png" href="../images/transparent-favicon.png">
 </head>
 <body>
-  <div id="calculator">
-    <input id="display" disabled>
-    <div id="keys">
-
-      <button data-action="clear">clear</button>
-      <button data-value="(">(</button>
-      <button data-value=")">)</button>
-      <button data-value="/" class="operator-btn">/</button>
-
-      <button class="number-btn" data-value="7">7</button>
-      <button class="number-btn" data-value="8">8</button>
-      <button class="number-btn" data-value="9">9</button>
-      <button class="operator-btn" data-value="*">*</button>
-
-      <button class="number-btn" data-value="4">4</button>
-      <button class="number-btn" data-value="5">5</button>
-      <button class="number-btn" data-value="6">6</button>
-      <button class="operator-btn" data-value="-">-</button>
-
-      <button class="number-btn" data-value="1">1</button>
-      <button class="number-btn" data-value="2">2</button>
-      <button class="number-btn" data-value="3">3</button>
-      <button class="operator-btn" data-value="+">+</button>
-
-      <button class="number-btn" data-value="0">0</button>
-      <button class="number-btn" data-value=".">.</button>
-      <button class="number-btn" data-value="(-)">(-)</button>
-      <button class="operator-btn" data-action="enter">enter</button>
+  <header class="header">
+    <div class="left-section">
+      <a class="name-link" href="../index.html">Luke Ting</a>
     </div>
-  </div>
+    <div class="middle-section">
+    </div>
+    <div class="right-section">
+      <div class="subpage-container">
+        <a class="subpage-link" href="../index.html">Home</a>
+      </div>
+      <div class="subpage-container">
+        <a class="subpage-link" href="../projects.html">Projects</a>
+      </div>
+      <div class="subpage-container">
+        <a class="subpage-link" href="../posts.html">Posts</a>
+      </div>
+      <div class="subpage-container">
+        <a class="subpage-link" href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="calculator">
+      <input id="display" disabled>
+      <div id="keys">
+        <button id="secondBtn">2nd</button>
+        <button data-fx="sin" data-inverse="asin">sin</button>
+        <button data-fx="cos" data-inverse="acos">cos</button>
+        <button data-fx="tan" data-inverse="atan">tan</button>
+        <button data-action="clear">clear</button>
+        
+        <button data-fx="^" data-inverse="n√">^</button>
+        <button data-value="π">π</button>
+        <button data-value="(">(</button>
+        <button data-value=")">)</button>
+        <button data-value="/" class="orange-btn">/</button>
+  
+        <button data-fx="x^2" data-inverse="√">x^2</button>
+        <button class="cream-btn" data-value="7">7</button>
+        <button class="cream-btn" data-value="8">8</button>
+        <button class="cream-btn" data-value="9">9</button>
+        <button class="orange-btn" data-value="*">*</button>
+  
+        <button data-fx="log" data-inverse="10^x">log</button>
+        <button class="cream-btn" data-value="4">4</button>
+        <button class="cream-btn" data-value="5">5</button>
+        <button class="cream-btn" data-value="6">6</button>
+        <button class="orange-btn" data-value="-">-</button>
+        
+        <button data-fx="ln" data-inverse="e^x">ln</button>
+        <button class="cream-btn" data-value="1">1</button>
+        <button class="cream-btn" data-value="2">2</button>
+        <button class="cream-btn" data-value="3">3</button>
+        <button class="orange-btn" data-value="+">+</button>
+        
+        <button data-value="Ans">Ans</button>
+        <button class="cream-btn" data-value="0">0</button>
+        <button class="cream-btn" data-value=".">.</button>
+        <button class="cream-btn" data-value="(-)">(-)</button>
+        <button class="orange-btn" data-action="enter">enter</button>
+      </div>
+    </div>
+  </main>
+
   <script src="https://cdn.jsdelivr.net/npm/expr-eval@2/dist/bundle.js"></script>
   <script src="script.js"></script>
 </body>

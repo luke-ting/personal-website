@@ -20,6 +20,7 @@
   font-weight: 500;
   color:whitesmoke;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .right-section{
