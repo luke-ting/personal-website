@@ -1,0 +1,45 @@
+body{
+  background-image:url("../images/background-0.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  margin:0;
+  transition: background-image 2s ease;
+}
+#clock-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+#clock{
+  position:relative;
+  font-family:monospace;
+  font-size:6rem;
+  font-weight:bold;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(5px);
+  background-color: hsla(0,0%,100%,0.1);
+  width: 100%;
+}
+#clock-container button{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size: 2rem;
+  background-color: hsl(0, 0%, 0%, 0);
+  color:white;
+  border:none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+#prev{
+  left:0;
+  margin-left:2%
+}
+#next{
+  right:0;
+  margin-right:2%;
+}

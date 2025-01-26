@@ -1,8 +1,3 @@
-//import { Parser } from 'expr-eval';
-
-//const parser = new exprEval.Parser();
-
-
 let expression = "";
 
 let ans;
