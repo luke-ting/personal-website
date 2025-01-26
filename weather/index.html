@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="icon" type = "image/png" href="../images/transparent-favicon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <a class="name-link" href="../index.html">Luke Ting</a>
+    </div>
+    <div class="middle-section">
+    </div>
+    <div class="right-section">
+      <div class="subpage-container">
+        <a class="subpage-link" href="../index.html">Home</a>
+      </div>
+      <div class="subpage-container">
+        <a class="subpage-link" href="../projects.html">Projects</a>
+      </div>
+      <div class="subpage-container">
+        <a class="subpage-link" href="../posts.html">Posts</a>
+      </div>
+      <div class="subpage-container">
+        <a class="subpage-link" href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="card">
+      <div id="searchContainer">
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <select id="stateSelect">
+          <option value="" disabled selected>Select state</option>
+        </select>  
+        <button id="submitButton"><img id = "searchIcon" src="../images/search-icon.png"></button>  
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
